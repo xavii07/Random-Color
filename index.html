@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1, maximum-scale=1">
     <title>Random Color</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" href="img/icono.png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
@@ -28,14 +29,18 @@
 <section>
     <main class="color">
         <div class="color__cont">
-            <div class="color__contH2">
-                <h2 class="color__nombre">background-color: <span class="color__num" id="color">rgb(232, 210, 128)</span></h2>
+            <div class="color__contH2" id="copyColor" data-clipboard-target="#contH2">
+                <h2 class="color__nombre" id="contH2">background-color: <span class="color__num" id="color">rgb(232, 210, 128);</span></h2>
+            </div>
+            <div class="color__contcopy">
+                <p class="color__copiado" id="colorCopiado"><i class="material-icons" id="color__icono">content_copy</i>Color copiado</p>
             </div>
             <button class="color__btn" id="btn">Nuevo Color</button>
         </div>
     </main>
 </section>
-    
+
+    <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
     <script src="js/app.min.js"></script>
 </body>
 </html>
