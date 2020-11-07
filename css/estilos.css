@@ -74,6 +74,7 @@ section {
     background:#222;
     border-radius: 5px;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
 .color__nombre {
@@ -81,8 +82,53 @@ section {
     color:#eee;
 }
 
+.color__nombre::selection {
+    background-color: rgba(34, 34, 34, 0.3);
+}
+
 .color__num {
     color:rgb(18, 131, 184);
+}
+
+.color__num::selection {
+    background:rgba(34, 34, 34, 0.3);
+}
+
+/*texto copiado*/
+.color__contcopy {
+    position: relative;
+    background: transparent;
+    width: 25%;
+    min-width: 90px;
+    top: -10px;
+    margin: auto;
+    border-radius: 3px;
+}
+
+.color__copiado {
+    color:rgba(34, 34, 34, 0); 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
+}
+
+.color__copiado::selection {
+    background: transparent;
+}
+
+.color__copiado.active {
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 10px;
+    color:rgb(50, 121, 226);
+    background: rgb(17, 16, 16);
+}
+
+#color__icono {
+    font-size: 10px;
+}
+
+#color__icono::selection {
+    background: transparent;
 }
 
 .color__btn {
